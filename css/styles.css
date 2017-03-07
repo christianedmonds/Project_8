@@ -123,6 +123,9 @@ header .name{
   margin: 0 auto;
 }
 
+.buy {
+  text-decoration: underline;
+}
 .information{
   width: 100%;
   text-align: center;
@@ -147,8 +150,11 @@ th {
   background-color: #12bc82;
 }
 
-input:focus {
-  background: pink;
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  background-color: #c1c0bb;
 }
 /* Footer styles */
 

@@ -10,17 +10,17 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <nav class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li><a href="#">Survey</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <header>
+    <header role="banner">
       <div class="header_img">
-        <img src="img/concert02_no_text.jpg" alt="Raised hands at music concert">
+        <img src="img/concert02_no_text.jpg" alt="photo of raised hands at music concert">
       </div>
       <div class="header_text">
         <h1>Accessible Frog</h1>
@@ -28,13 +28,13 @@
       </div>
     </header>
 
-    <main>
+    <main role=”main”>
       <h1 class="heading">Survey</h1>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/concert01.jpg">
+          <img class="photo" src= "img/concert01.jpg" alt="Photo of rasied hands at a concert">
           <div class="container">
-            <fieldset>
+            <fieldset role="form">
               <legend>Connect with us</legend>
               <form class = "survey">
                 <p>Who is your favorite band member:</p>
@@ -74,13 +74,15 @@
       <h1 class="heading">Newsletter</h1>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/the_band.jpg">
+          <img class="photo" src= "img/the_band.jpg" alt="Photo of a drummer playing drums at a show">
             <div class="container">
               <form class="newsletter">
                   <label for="name">Name: <input id="name" type ="text" name="textfield"></label><br>
                   <label for="email">Email: <input id="email" type ="email" name="textfield"></label><br>
                   <label for="email2">Retype Email: <input id="email2" type ="email" name="textfield"></label><br>
-                  <button type="submit">Sign Up</button>
+                  <button type="submit" aria-describedby="info">Sign Up</button>
+                  <p id="info">When you sign up your contact info will be added
+                    to our system so we can keep you updated with current band news</p>
               </form>
             </div>
         </div>
